@@ -9,7 +9,20 @@
   </head>
 
   <body>
-    <%= yield %>
-    
+  	<header>
+      <div>
+        <%= link_to "Udio", '#', id: "logo" %>
+        <nav>
+          <ul>
+            <li><%= link_to "Home",   '#' %></li>
+            <li><%= link_to "Help",   '#' %></li>
+            <li><%= link_to "Log in", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div>
+      <%= yield %>
+    </div>  
   </body>
 </html>

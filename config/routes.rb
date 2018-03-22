@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :users
   resources :books
 
-=begin
+
   get    'login/index'
   get    '/users/sign_up',  to: 'users#new'
   get    '/users/sign_in',   to: 'sessions#new'
@@ -13,9 +13,8 @@ Rails.application.routes.draw do
   #delete '/users/sign_out',  to: 'devise/sessions#destroy'
   #get "/users/sign_out" => "sessions#destroy"
   #delete "/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session_path
-=end
-  get    '/sell',    to:  'books#new'
-  post   '/sell',    to: 'books#create'
+#  get    '/sell',    to:  'books#new'
+#  post   '/sell',    to: 'books#create'
   
   root 'login#index'
 
